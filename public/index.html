@@ -11,7 +11,7 @@
 
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
-      <a-marker preset="hiro">
+      <a-marker type="pattern" url="img/pattern-qrcode.patt">
         <a-plane static-body material="opacity: 0;"></a-plane>
         <a-entity
             position="0 0 0"
@@ -24,15 +24,8 @@
             scale="0.04 0.04 0.04"
             gltf-model="url(/model/nengajo2021.gltf)"
             animation="property: object3D.position.y;
-                        to: 1.6;
+                        to: 1.7;
                         dir: alternate;
-                        dur: 1000;
-                        loop: true"
-            rotation="0 0 0"
-            animation="property: rotation;
-                        from: 0 0 0;
-                        to: 0 0 360;
-                        dir: reverse;
                         dur: 1000;
                         loop: true">                      
         </a-entity>
