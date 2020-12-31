@@ -13,30 +13,22 @@
     <a-scene embedded arjs>
       <a-marker type="pattern" url="img/pattern-qrcode.patt">
         <a-plane static-body material="opacity: 0;"></a-plane>
-        <!-- <a-entity
+        <a-entity
             position="0 0 1"
             scale="0.3 0.3 0.3"
             gltf-model="url(/model/akeome.gltf)"
             animation-mixer="loop: pingpong"
-        ></a-entity> -->
-        <a-entity static-body geometry="primitive: plane; height: 10; width: 10" position="0 0 0" rotation="-90 0 0"></a-entity>
-        <!-- <a-entity
-            dynamic-body
-            position="0 1.6 0"
+        ></a-entity>
+        <a-entity
+            position="0 1.8 0"
             scale="0.07 0.07 0.07"
             gltf-model="url(/model/nengajo2021-2.gltf)"
             animation="property: object3D.position.y;
-                        to: 2;
+                        to: 2.2;
                         dir: alternate;
                         dur: 1000;
                         loop: true"
-        ></a-entity> -->
-            <a-cube
-            dynamic-body
-            color="#0095DD"
-            position="0 2 0"
-            rotation="0 0 0">
-            </a-cube>
+        ></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
