@@ -20,7 +20,7 @@
             animation-mixer="loop: pingpong"
         ></a-entity> -->
         <a-entity static-body geometry="primitive: plane; height: 10; width: 10" position="0 0 0" rotation="-90 0 0"></a-entity>
-        <a-entity
+        <!-- <a-entity
             dynamic-body
             position="0 1.6 0"
             scale="0.07 0.07 0.07"
@@ -30,7 +30,13 @@
                         dir: alternate;
                         dur: 1000;
                         loop: true"
-        ></a-entity>
+        ></a-entity> -->
+            <a-cube
+            dynamic-body
+            color="#0095DD"
+            position="0 2 0"
+            rotation="0 0 0">
+            </a-cube>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
